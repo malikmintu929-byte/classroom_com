@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Friendship Day</title>
+</head>
+<body>
+
+<!-- Page 1 -->
+<div id="page1">
+    <h1>Enter Your Friend's Name</h1>
+    <input type="text" id="nameInput" placeholder="Enter name">
+    <br><br>
+    <button onclick="showPage2()">Next</button>
+</div>
+
+<!-- Page 2 -->
+<div id="page2" style="display:none;">
+    <h1 id="message"></h1>
+</div>
+
+<script>
+function showPage2() {
+    let name = document.getElementById("nameInput").value;
+
+    if(name === "") {
+        alert("Please enter a name!");
+        return;
+    }
+
+    document.getElementById("page1").style.display = "none";
+    document.getElementById("page2").style.display = "block";
+
+    document.getElementById("message").innerText =
+        "Happy Friendship Day, " + name + "!";
+}
+</script>
+
+</body>
+</html>
