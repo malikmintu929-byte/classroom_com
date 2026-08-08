@@ -1,0 +1,15 @@
+ div{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    display: inline-block;
+    border: 2px solid black;}
+    body{
+    background-image: url("cat . pic.jpg");
+ background-size:cover
+   }
+ #box1{
+   background-image:url("cat . pic.jpg") ;
+background-size:contain;
+}
+   

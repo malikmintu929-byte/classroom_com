@@ -1,0 +1,13 @@
+*{
+    background-color: #d662f0;
+}
+div{
+    height:100px;
+    width: 100px;
+    background-image:url("cat . pic.jpg") ;
+background-size:cover;
+color: beige;
+position:fixed;
+right:10px;
+top:20px;
+}
